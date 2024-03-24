@@ -1,0 +1,1 @@
+console.log("Stop trying to use JS")

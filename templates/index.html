@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script nonce="{{ nonce }}" src="/js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML renderer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link nonce="{{ nonce }}" rel="preconnect" href="https://fonts.googleapis.com">
+<link nonce="{{ nonce }}" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link nonce="{{ nonce }}" href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@0..45,100&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+<link nonce="{{ nonce }}" rel="stylesheet" type="text/css" href="/css">
+</head>
+<body>
+    <h1>Welcome to the <div class="title">HTML renderer!</div></h1>
+    <p class="code">Code: {{ user_input }}</p>
+    Rendered code: {{ user_input|safe }}<br>
+    <form action="/" method="post">
+        <label for="user_input">Enter HTML to render:</label>
+        <input type="text" id="user_input" name="user_input">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
